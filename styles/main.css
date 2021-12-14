@@ -1,0 +1,84 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color:  #551A8B;
+}
+
+.logo {
+    color:rgb(204, 204, 204);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+}
+
+.nav-links a{
+    color:rgb(204, 204, 204);
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color:rgb(204, 204, 204);
+    margin: 5px;
+}
+
+@media screen and (max-width: 678px){
+    body{
+        /* hide overflow of nav-links unselected */
+        overflow-x: hidden;
+    }
+   .nav-links{
+       position: absolute;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       right: 0px;
+       /* height is 100vh minus the nav-height */
+       height:92vh;
+       /* ensure it rests under the height of nav */
+       top: 8vh;
+       background-color:  #551A8B;
+       /* remove from the page */
+       transform: translateX(100%);
+       transition: transform 0.5s ease-in;
+   }
+   .nav-links li{
+       /* hide links by default to fade in on hover */
+       opacity: 0;
+   }
+
+   .burger{
+       display: block;
+       cursor: pointer;
+   }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
