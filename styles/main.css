@@ -68,10 +68,16 @@ nav {
        transform: translateX(100%);
        transition: transform 0.5s ease-in;
    }
-   .nav-links li{
-       /* hide links by default to fade in on hover */
-       opacity: 0;
-   }
+   .nav-links a{
+       font-size: 16px;
+       letter-spacing: 2px;
+       text-transform: uppercase;
+       }
+    
+    .logo {
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
 
    .burger{
        display: block;
