@@ -33,6 +33,10 @@ nav {
     font-size: 14px;
 }
 
+.nav-links a:hover{
+    color: rgb(125, 219, 125);
+}
+
 .nav-links li{
     list-style: none;
 }
@@ -46,6 +50,16 @@ nav {
     height: 3px;
     background-color:rgb(204, 204, 204);
     margin: 5px;
+}
+
+.main-container{
+    width: 100vw;
+    height: 92vh;
+    background-color: rgb(196, 252, 196);
+    padding-top: 10px;
+    padding-left: 15%;
+    padding-right: 15%;
+    ;
 }
 
 @media screen and (max-width: 678px){
