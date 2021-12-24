@@ -6,6 +6,8 @@
 
 h2 {
     font-family: 'Fjalla One', 'sans-serif';
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
     color: #7F675B;
 }
 
@@ -77,6 +79,16 @@ nav {
     ;
 }
 
+.nav-active{
+    transform: translateX(0%);
+}
+
+.profile_pic {
+    border-radius: 50%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
 @media screen and (max-width: 678px){
     body{
         /* hide overflow of nav-links unselected */
@@ -113,12 +125,13 @@ nav {
        display: block;
        cursor: pointer;
    }
+   .about {
+    display: flex;
+    flex-direction: column;
 }
-
-.nav-active{
-    transform: translateX(0%);
-}
-
-.profile_pic {
-    border-radius: 50%;
+    .main-container img{
+        max-height: 200px;
+        max-width: 200px;
+        align-self: center;
+    }
 }
