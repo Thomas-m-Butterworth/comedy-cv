@@ -71,7 +71,7 @@ nav {
 
 .main-container{
     width: 100vw;
-    height: 92vh;
+    height: 100vh;
     background-color: #EEF0F2;
     padding-top: 10px;
     padding-left: 15%;
@@ -121,11 +121,8 @@ nav {
        display: block;
        cursor: pointer;
    }
-   .about {
-    display: flex;
-    flex-direction: column;
-}
-    .main-container img{
+
+    .profile_pic img{
         max-height: 200px;
         max-width: 200px;
         align-self: center;
