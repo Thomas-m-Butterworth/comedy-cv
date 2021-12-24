@@ -79,10 +79,6 @@ nav {
     ;
 }
 
-.nav-active{
-    transform: translateX(0%);
-}
-
 .profile_pic {
     border-radius: 50%;
     padding-top: 5px;
@@ -134,4 +130,8 @@ nav {
         max-width: 200px;
         align-self: center;
     }
+}
+
+.nav-active{
+    transform: translateX(0%);
 }
