@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #EEF0F2;
+}
+
 h2 {
     font-family: 'Fjalla One', 'sans-serif';
     text-transform: uppercase;
@@ -72,7 +76,6 @@ nav {
 
 .main-container{
     width: 100vw;
-    background-color: #EEF0F2;
     padding-top: 10px;
     padding-left: 15%;
     padding-right: 15%;
