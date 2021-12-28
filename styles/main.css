@@ -89,7 +89,8 @@ nav {
     body{
         /* hide overflow of nav-links unselected */
         overflow-x: hidden;
-        text-align: center;
+        text-align: justify;
+        text-align-last: center;
     }
 
     nav {
