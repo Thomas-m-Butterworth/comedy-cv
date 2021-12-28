@@ -88,6 +88,17 @@ nav {
     padding-bottom: 10px;
 }
 
+.promoter_quote {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.promoter_quote h3 {
+    text-transform: uppercase;
+    font-family: 'Fjalla One', 'sans-serif';
+    font-size: 1.2em;
+}
+
 @media screen and (max-width: 678px){
     body{
         /* hide overflow of nav-links unselected */
