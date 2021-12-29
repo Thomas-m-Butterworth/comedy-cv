@@ -88,15 +88,16 @@ nav {
     padding-bottom: 10px;
 }
 
-.promoter_quote {
+.subcaption {
     padding-top: 7px;
     padding-bottom: 7px;
 }
 
-.promoter_quote h3 {
+.subhead {
     text-transform: uppercase;
     font-family: 'Fjalla One', 'sans-serif';
     font-size: 1.2em;
+    color: #462255;
 }
 
 @media screen and (max-width: 678px){
