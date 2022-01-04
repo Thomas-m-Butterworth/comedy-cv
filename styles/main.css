@@ -12,12 +12,14 @@ h2 {
     font-family: 'Fjalla One', 'sans-serif';
     text-transform: uppercase;
     letter-spacing: 1.5px;
+    padding-left: 5px;
     color: #7F675B;
 }
 
 p {
     font-family: 'Cantarell', 'sans-serif';
     font-weight: 400;
+    font-size: 14px;
     color: #462255;
 }
 
@@ -39,11 +41,10 @@ nav {
 }
 
 .nav-links {
-    display: flex;
+    display: none;
     font-family: 'Cantarell', 'sans-serif';
     font-weight: 700;
     font-size: 14px;
-    justify-content: space-around;
     width: 80%;
 }
 
@@ -75,11 +76,62 @@ nav {
 }
 
 .main-container{
+    display: grid;
     width: 100vw;
     padding-top: 10px;
-    padding-left: 15%;
-    padding-right: 15%;
-    ;
+    grid-template-columns: 5% 10% 20% 10% 20% 10% 20% 5%;
+    grid-template-rows: 15% 25% 20% 20% 20%;
+}
+
+.about {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 8;
+}
+
+#about_copy {
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#notable-gigs {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#quotes {
+    display: grid;
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#other-works {
+    display: grid;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#images-video {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
 }
 
 .profile_pic {
@@ -100,6 +152,21 @@ nav {
     color: #462255;
 }
 
+.cv-section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.gallery {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.gallery img{
+    height:250px;
+}
 @media screen and (max-width: 678px){
     body{
         /* hide overflow of nav-links unselected */
@@ -116,6 +183,7 @@ nav {
        position: fixed;
        display: flex;
        flex-direction: column;
+       justify-content: space-around;
        align-items: center;
        right: 0px;
        /* height is 100vh minus the nav-height */
@@ -134,13 +202,22 @@ nav {
        }
     
     .logo {
-        font-size: 22px;
+        font-size: 22px;    
         letter-spacing: 2px;
     }
 
     .main-container {
+        display: flex;;
         padding-top: 8vh;
+        margin-left: 10vw;
+        margin-right: 10vw; 
+        flex-direction: column;
     }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        }
 
    .burger{
        display: block;
@@ -148,9 +225,25 @@ nav {
    }
 
     .profile_pic img{
-        max-height: 200px;
-        max-width: 200px;
+        height: 150px;
+        width: 150px;
         align-self: center;
+    }
+
+    .gallery img{
+        height:100px;
+        border-radius: 100%;
+    }
+
+    .ytVideo iframe{
+        width: 300px;
+        height: 169px;
+    }
+
+    .gallery {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
     }
 }
 
