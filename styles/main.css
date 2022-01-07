@@ -97,6 +97,16 @@ nav {
     grid-row-end: 2;
 }
 
+.profile_pic {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-right: 2vh;
+}
+
+.profile_pic img{
+    border-radius: 50%;
+}
+
 #notable-gigs {
     display: grid;
     grid-column-start: 2;
@@ -133,13 +143,6 @@ nav {
 .content {
     display: flex;
     flex-direction: row;
-}
-
-.profile_pic img{
-    border-radius: 50%;
-    padding-top: 5px;
-    padding-right: 5px;
-    padding-bottom: 10px;
 }
 
 .subcaption {
@@ -241,6 +244,10 @@ iframe {
    .burger{
        display: block;
        cursor: pointer;
+   }
+
+   .profile_pic {
+       padding: 1vh;
    }
 
     .profile_pic img{
