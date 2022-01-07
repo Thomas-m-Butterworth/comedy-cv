@@ -80,10 +80,10 @@ nav {
     width: 100vw;
     padding-top: 10px;
     grid-template-columns: 5% 10% 20% 10% 20% 10% 20% 5%;
-    grid-template-rows: 15% 25% 20% 20% 20%;
+    grid-template-rows: 25% 20% 14% 20% 15%;
 }
 
-.about {
+#about {
     display: grid;
     grid-column-start: 2;
     grid-column-end: 8;
@@ -107,26 +107,27 @@ nav {
 
 #quotes {
     display: grid;
-    grid-column-start: 6;
-    grid-column-end: 8;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-#other-works {
-    display: grid;
     grid-column-start: 4;
     grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 3;
 }
 
+#other-works {
+    display: grid;
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
 #images-video {
     display: grid;
     grid-column-start: 2;
-    grid-column-end: 8;
-    grid-row-start: 3;
-    grid-row-end: 5;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    text-align: left;
 }
 
 .content {
@@ -134,9 +135,10 @@ nav {
     flex-direction: row;
 }
 
-.profile_pic {
+.profile_pic img{
     border-radius: 50%;
     padding-top: 5px;
+    padding-right: 5px;
     padding-bottom: 10px;
 }
 
@@ -144,6 +146,7 @@ nav {
     padding-top: 7px;
     padding-bottom: 7px;
 }
+
 
 .subhead {
     text-transform: uppercase;
@@ -153,30 +156,46 @@ nav {
 }
 
 .cv-section {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
+    padding: 10px;
+    text-align: justify;
+    text-align-last: center;
 }
 
 .gallery {
-    display:flex;
-    flex-direction: row;
+    display: flex;
     justify-content: center;
+    flex-direction: row;
+}
+
+iframe {
+    max-width: 545px;
+    max-height: 305px;
+    justify-content: center;
+    padding: 15px;
+    padding-top: 5px;
+    border-radius: 10%;
 }
 
 .gallery img{
-    height:250px;
+    max-height:175px;
+    padding: 10px;
+    border-radius: 10%;
 }
-@media screen and (max-width: 678px){
-    body{
-        /* hide overflow of nav-links unselected */
+
+#ytMobile {
+    display: none;
+}
+@media screen and (max-width: 1024px){
+    body {
         overflow-x: hidden;
-        text-align: justify;
-        text-align-last: center;
+    }
+
+    h2 {
+        text-align: center;
     }
 
     nav {
-    position: fixed;
+        position: fixed;
     }
 
    .nav-links{
@@ -207,17 +226,17 @@ nav {
     }
 
     .main-container {
-        display: flex;;
+        display: flex;
+        padding-left: 10vw;
+        padding-right: 10vw;
         padding-top: 8vh;
-        margin-left: 10vw;
-        margin-right: 10vw; 
         flex-direction: column;
     }
 
-    .about {
+    #about {
         display: flex;
         flex-direction: column;
-        }
+    }
 
    .burger{
        display: block;
@@ -225,19 +244,24 @@ nav {
    }
 
     .profile_pic img{
-        height: 150px;
-        width: 150px;
-        align-self: center;
+        max-height: 150px;
+        border-radius: 50%;
     }
 
     .gallery img{
         height:100px;
         border-radius: 100%;
+        padding: 5px;
+        padding-top: 10px;
     }
 
     .ytVideo iframe{
-        width: 300px;
-        height: 169px;
+        display: none;
+    }
+
+    #ytMobile {
+        display: block;
+        height: 100px;
     }
 
     .gallery {
